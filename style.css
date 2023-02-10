@@ -1,0 +1,41 @@
+:root {
+  --border-radius: 5px;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: var(--border-radius);
+}
+
+button {
+  background: rgb(7, 67, 49);
+  border: none;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  filter: brightness(1.5);
+}

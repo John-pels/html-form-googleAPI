@@ -8,7 +8,24 @@
     <title>HTML Form Google API Submission</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <main class="container">
+      <h1>Fill this form</h1>
+      <form id="form">
+        <label for="fullName">
+          Full Name:
+          <input type="text" name="fullName" id="fullName" required />
+        </label>
+        <label for="email">
+          Email Address:
+          <input type="text" name="email" id="email" required />
+        </label>
+        <label for="email">
+          Notes:
+          <textarea name="notes" id="notes" rows="8" required></textarea>
+        </label>
+        <button type="submit" id="button">Submit</button>
+      </form>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
